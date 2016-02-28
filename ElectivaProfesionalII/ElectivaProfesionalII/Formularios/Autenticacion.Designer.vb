@@ -23,30 +23,30 @@ Partial Class FormAutenticacion
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(FormAutenticacion))
-        Me.PictureBox3 = New System.Windows.Forms.PictureBox()
+        Me.Picture = New System.Windows.Forms.PictureBox()
         Me.Picture_salir = New System.Windows.Forms.PictureBox()
         Me.Picture_ingresar = New System.Windows.Forms.PictureBox()
         Me.Comb_tipo = New System.Windows.Forms.ComboBox()
-        Me.Text_clave = New System.Windows.Forms.TextBox()
-        Me.Text_usuario = New System.Windows.Forms.TextBox()
-        Me.Label4 = New System.Windows.Forms.Label()
-        Me.Label3 = New System.Windows.Forms.Label()
-        Me.Label2 = New System.Windows.Forms.Label()
-        Me.Label1 = New System.Windows.Forms.Label()
-        CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.Txt_clave = New System.Windows.Forms.TextBox()
+        Me.Txt_usuario = New System.Windows.Forms.TextBox()
+        Me.lblInfo = New System.Windows.Forms.Label()
+        Me.lblTipo = New System.Windows.Forms.Label()
+        Me.lblClave = New System.Windows.Forms.Label()
+        Me.lblUsuario = New System.Windows.Forms.Label()
+        CType(Me.Picture, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Picture_salir, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Picture_ingresar, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
-        'PictureBox3
+        'Picture
         '
-        Me.PictureBox3.Image = CType(resources.GetObject("PictureBox3.Image"), System.Drawing.Image)
-        Me.PictureBox3.Location = New System.Drawing.Point(233, 12)
-        Me.PictureBox3.Name = "PictureBox3"
-        Me.PictureBox3.Size = New System.Drawing.Size(132, 130)
-        Me.PictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.PictureBox3.TabIndex = 22
-        Me.PictureBox3.TabStop = False
+        Me.Picture.Image = CType(resources.GetObject("Picture.Image"), System.Drawing.Image)
+        Me.Picture.Location = New System.Drawing.Point(233, 12)
+        Me.Picture.Name = "Picture"
+        Me.Picture.Size = New System.Drawing.Size(132, 130)
+        Me.Picture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.Picture.TabIndex = 22
+        Me.Picture.TabStop = False
         '
         'Picture_salir
         '
@@ -77,57 +77,57 @@ Partial Class FormAutenticacion
         Me.Comb_tipo.Size = New System.Drawing.Size(165, 21)
         Me.Comb_tipo.TabIndex = 19
         '
-        'Text_clave
+        'Txt_clave
         '
-        Me.Text_clave.Location = New System.Drawing.Point(62, 38)
-        Me.Text_clave.Name = "Text_clave"
-        Me.Text_clave.Size = New System.Drawing.Size(165, 20)
-        Me.Text_clave.TabIndex = 18
-        Me.Text_clave.UseSystemPasswordChar = True
+        Me.Txt_clave.Location = New System.Drawing.Point(62, 38)
+        Me.Txt_clave.Name = "Txt_clave"
+        Me.Txt_clave.Size = New System.Drawing.Size(165, 20)
+        Me.Txt_clave.TabIndex = 18
+        Me.Txt_clave.UseSystemPasswordChar = True
         '
-        'Text_usuario
+        'Txt_usuario
         '
-        Me.Text_usuario.Location = New System.Drawing.Point(62, 12)
-        Me.Text_usuario.Name = "Text_usuario"
-        Me.Text_usuario.Size = New System.Drawing.Size(165, 20)
-        Me.Text_usuario.TabIndex = 17
+        Me.Txt_usuario.Location = New System.Drawing.Point(62, 12)
+        Me.Txt_usuario.Name = "Txt_usuario"
+        Me.Txt_usuario.Size = New System.Drawing.Size(165, 20)
+        Me.Txt_usuario.TabIndex = 17
         '
-        'Label4
+        'lblInfo
         '
-        Me.Label4.AutoSize = True
-        Me.Label4.Font = New System.Drawing.Font("Arial", 6.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label4.Location = New System.Drawing.Point(192, 155)
-        Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(173, 12)
-        Me.Label4.TabIndex = 16
-        Me.Label4.Text = "Copyright ©2016 Derechos Reservados"
+        Me.lblInfo.AutoSize = True
+        Me.lblInfo.Font = New System.Drawing.Font("Arial", 6.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblInfo.Location = New System.Drawing.Point(192, 155)
+        Me.lblInfo.Name = "lblInfo"
+        Me.lblInfo.Size = New System.Drawing.Size(173, 12)
+        Me.lblInfo.TabIndex = 16
+        Me.lblInfo.Text = "Copyright ©2016 Derechos Reservados"
         '
-        'Label3
+        'lblTipo
         '
-        Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(10, 65)
-        Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(31, 13)
-        Me.Label3.TabIndex = 15
-        Me.Label3.Text = "Tipo:"
+        Me.lblTipo.AutoSize = True
+        Me.lblTipo.Location = New System.Drawing.Point(10, 65)
+        Me.lblTipo.Name = "lblTipo"
+        Me.lblTipo.Size = New System.Drawing.Size(31, 13)
+        Me.lblTipo.TabIndex = 15
+        Me.lblTipo.Text = "Tipo:"
         '
-        'Label2
+        'lblClave
         '
-        Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(10, 41)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(37, 13)
-        Me.Label2.TabIndex = 14
-        Me.Label2.Text = "Clave:"
+        Me.lblClave.AutoSize = True
+        Me.lblClave.Location = New System.Drawing.Point(10, 41)
+        Me.lblClave.Name = "lblClave"
+        Me.lblClave.Size = New System.Drawing.Size(37, 13)
+        Me.lblClave.TabIndex = 14
+        Me.lblClave.Text = "Clave:"
         '
-        'Label1
+        'lblUsuario
         '
-        Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(10, 15)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(46, 13)
-        Me.Label1.TabIndex = 13
-        Me.Label1.Text = "Usuario:"
+        Me.lblUsuario.AutoSize = True
+        Me.lblUsuario.Location = New System.Drawing.Point(10, 15)
+        Me.lblUsuario.Name = "lblUsuario"
+        Me.lblUsuario.Size = New System.Drawing.Size(46, 13)
+        Me.lblUsuario.TabIndex = 13
+        Me.lblUsuario.Text = "Usuario:"
         '
         'FormAutenticacion
         '
@@ -135,23 +135,23 @@ Partial Class FormAutenticacion
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
         Me.ClientSize = New System.Drawing.Size(376, 181)
-        Me.Controls.Add(Me.PictureBox3)
+        Me.Controls.Add(Me.Picture)
         Me.Controls.Add(Me.Picture_salir)
         Me.Controls.Add(Me.Picture_ingresar)
         Me.Controls.Add(Me.Comb_tipo)
-        Me.Controls.Add(Me.Text_clave)
-        Me.Controls.Add(Me.Text_usuario)
-        Me.Controls.Add(Me.Label4)
-        Me.Controls.Add(Me.Label3)
-        Me.Controls.Add(Me.Label2)
-        Me.Controls.Add(Me.Label1)
+        Me.Controls.Add(Me.Txt_clave)
+        Me.Controls.Add(Me.Txt_usuario)
+        Me.Controls.Add(Me.lblInfo)
+        Me.Controls.Add(Me.lblTipo)
+        Me.Controls.Add(Me.lblClave)
+        Me.Controls.Add(Me.lblUsuario)
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.MaximizeBox = False
         Me.MinimizeBox = False
         Me.Name = "FormAutenticacion"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Acceso - SysControl"
-        CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.Picture, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.Picture_salir, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.Picture_ingresar, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
@@ -159,14 +159,14 @@ Partial Class FormAutenticacion
 
     End Sub
 
-    Friend WithEvents PictureBox3 As PictureBox
+    Friend WithEvents Picture As PictureBox
     Friend WithEvents Picture_salir As PictureBox
     Friend WithEvents Picture_ingresar As PictureBox
     Friend WithEvents Comb_tipo As ComboBox
-    Friend WithEvents Text_clave As TextBox
-    Friend WithEvents Text_usuario As TextBox
-    Friend WithEvents Label4 As Label
-    Friend WithEvents Label3 As Label
-    Friend WithEvents Label2 As Label
-    Friend WithEvents Label1 As Label
+    Friend WithEvents Txt_clave As TextBox
+    Friend WithEvents Txt_usuario As TextBox
+    Friend WithEvents lblInfo As Label
+    Friend WithEvents lblTipo As Label
+    Friend WithEvents lblClave As Label
+    Friend WithEvents lblUsuario As Label
 End Class
