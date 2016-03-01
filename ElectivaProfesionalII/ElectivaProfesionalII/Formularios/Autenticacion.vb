@@ -2,7 +2,7 @@
     'Formato de Autenticacion
     Private Sub FormAutenticacion_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         cn = New ADODB.Connection
-        cn.Open("dsn=ElectivaProfesionalII")
+        cn.Open("dsn= ElectivaProfesionalII")
         'valida que la DB este OK, si no lo esta aparece el MSG de ConexionDB.vb
         If cn.State = ConnectionState.Closed Then
             ConexionDB.Show()
@@ -15,4 +15,8 @@
         End
     End Sub
 
+    Private Sub Picture_ingresar_Click(sender As Object, e As EventArgs) Handles Picture_ingresar.Click
+        SysControl.Show()
+        Me.Hide()
+    End Sub
 End Class
